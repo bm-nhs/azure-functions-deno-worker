@@ -342,7 +342,7 @@ async function runFunc(...args: string[]) {
   };
 
   const proc = await runWithRetry({ cmd, env }, "func.cmd");
-  await proc.status();
+  //await proc.status();
   proc.close();
 }
 
